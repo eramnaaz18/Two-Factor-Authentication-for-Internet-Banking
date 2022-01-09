@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block head %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footerstyling.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutusstyling.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+  {% endblock head %}
+{% block content %}
+    <div class="content-section">
+      <div class="login-section">
+        <div class="media">
+          <img class="rounded-circle account-img" src="{{ image_file }}">
+          <div class="media-body">
+            <h2>Username: {{ current_user.username }}</h2>
+            <p class="text-secondary">Email: {{ current_user.email }}</p>
+            <p class="text-secondary">Address: {{ current_user.address }}</p>
+            <p class="text-secondary">Contact Number: {{ current_user.phone }}</p>
+            <p class="text-secondary">Account Number: {{ current_user.account }}</p>
+            <p class="text-secondary">Debit Card Number: {{ current_user.debit }}</p>
+            <p class="text-secondary">Current Balance(in Rs.): {{ current_user.balance }}</p>
+            <button type="button" >Back to Dashboard<a href="{{ url_for('dashboard') }}"><img src="{{ url_for('static', filename='arrow.png') }}"></a></button>
+          </div>
+      </div>
+      
+      </div>
+{% endblock content %}

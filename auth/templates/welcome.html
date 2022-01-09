@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block head %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footerstyling.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contactstyling.css') }}">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  {% endblock head %}
+{% block content %}
+<div class=" section-gap"></div>
+      <div class="wrapper">
+        <h3 class="global-title text-center">Hello, {{ current_user.username }}!</h3>
+        <h4 class="global-title text-center">
+            Welcome to the WeSafeNetbanking page.<br><br>
+            Please visit the dashboard to access your profile!<br><br>
+            Happy Transacting!
+        </h4>
+        <img src="{{ url_for('static', filename='check1.jpg') }}" class="controller">
+
+</div>
+
+{% endblock content %}

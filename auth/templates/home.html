@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+ <div class="col-1">
+    <h2>Experience</h2>
+    <h3>Secured Authentication!</h3>
+    <img src="{{ url_for('static', filename='bank.jpg') }}" class="controller">
+    <p>Get Started!</p>
+    <button type="button">Login<a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='arrow.png') }}"></a></button>
+    
+</div>
+<div class="col-2">
+
+
+    
+    <div class="color-box"></div>
+</div>
+{% endblock content %}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.about-section {
+  
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: #0E2F5C;
+}
+
+button{
+  width: 240px;
+  border: 2;
+  padding: 12px 10px;
+  outline: none;
+  color:#039c9ca2;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5%;
+  border-color: #039c9ca2;
+  align-items: center;
+}
+button img{
+    width: 30px;
+    display: none;
+  }
+  
+  button:hover img{
+    display: block;
+  }
+
+button:hover{
+  width: 240px;
+  display: flex;
+  border: 2;
+  padding: 12px 10px;
+  outline: none;
+  color:white;
+  background: #039c9ca2;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5%;
+  border-color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+button.btn-contact {
+  border: none;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin: 20px auto 0;
+  color: #fff;
+
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  width: 300px;
+  outline: none;
+  background: linear-gradient(to right, #039c9ca2, #2f5c5f);
+  border-radius: 6px;
+  user-select: none;
+  border: 1px solid transparent;
+
+}
+
+.about-section a:link{
+  color: white;
+  text-decoration: none;
+}
+.about-section a:visited{
+  color: white;
+  text-decoration: none;
+}
+.about-section a:hover{
+  color: white;
+  text-decoration: none;
+}
+.about-section a:active{
+  color: white;
+  text-decoration: none;
+}
+.title {
+  color: #fff;
+}
+
+@media only screen and (max-width: 700px){
+  .about-section {
+    padding-top: 150px;
+    font-size: 12px;
+  }
+  button{
+    width: 120px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color:#fff;
+    background: linear-gradient(to right, #039c9ca2, #2f5c5f);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5%;
+    font-size: 12px;
+  }
+  
+  button img{
+    width: 15px;
+    display: none;
+  }
+  
+  button:hover img{
+    display: block;
+  }
+  
+  button:hover{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+}

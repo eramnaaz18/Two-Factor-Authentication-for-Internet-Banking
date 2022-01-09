@@ -1,0 +1,27 @@
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color:#fff;
+    background: linear-gradient(to right, #039c9ca2, #2f5c5f);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5%;
+  }
+  
+  button img{
+    width: 30px;
+    display: none;
+  }
+  
+  button:hover img{
+    display: block;
+  }
+  
+  button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

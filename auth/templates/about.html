@@ -1,0 +1,45 @@
+
+  {% extends "layout.html" %}
+  {% block head %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footerstyling.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutusstyling.css') }}">
+  {% endblock head %}
+{% block content %}
+<div class="content-section">
+    <div class="about-section">
+        <h1>Who are We?</h1>
+        <br>
+        
+        <p>
+      "WeSafe Bank" is the secure banking portal for all your netbanking purpose. 
+      It is the one stop solution to all your problems related to secured netbanking.
+      Worried about whether your account is accessed by someone else who took your pin?
+      We at WeSafe ensure that our customers enjoy seamless experience of netbanking and relax
+      while we take the responsibility of keeping their account secured.
+      Our clients are our future. The ones having an account with us, goes through 2FA process before
+      accessing their account.</p>
+      <p>
+        Yes, you heard it right! 
+        Come join us, and enter the revolutionary system of digi-banking.
+        Contact us and create your account with us by choosing a wide range of account types - Savings, Fixed Deposit,
+        Salary, Joint, Recurring Deposit and NRA Accounts.
+      </p>
+      
+      
+        <p>Company goals are aspirational and not guarantees or promises that all goals will be met. 
+          Statistics and metrics included in our ESG documents are estimates and may be based on assumptions or
+           developing standards.</p>
+           
+           <button type="submit" class="btn btn-contact"><a href="{{ url_for('home') }}">Get to meet our developers</a></button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <button type="button" >Back to Homepage<a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='arrow.png') }}"></a></button>
+      
+    </div>
+      {% endblock content %}
+    
